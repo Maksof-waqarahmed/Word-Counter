@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main_container">
+        <div class="main-content-container">
+            <div class="heading-div">
+                <h1>WORD COUNTER</h1>
+            </div>
+            <div class="options-div">
+                <div class="options_inner_div">
+                    <div class="writing-style-div increase-font" onclick="incFont()">
+                        <h3>A</h3>
+                    </div>
+                    <div class="writing-style-div decrease-font" onclick="decFont()">
+                        <h3>A</h3>
+                    </div>
+                    <div class="writing-style-div bold-text" onclick="makeBold()">
+                        <h3>B</h3>
+                    </div>
+                    <div class="writing-style-div italic-text" onclick="makeItalic()">
+                        <h3>I</h3>
+                    </div>
+                    <div class="writing-style-div underline-text" onclick="makeUnderline()">
+                        <h3>U</h3>
+                    </div>
+                    <div class="writing-style-div clear-text" onclick="clearText()">
+                        <h3>C</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="text-area-div">
+                <textarea name="textarea" id="textArea" placeholder="Start typing your document here..."></textarea>
+            </div>
+            <div class="word-count-div">
+                <h1 id="wordCount">0 Words 0 Characters</h1>
+            </div>
+        </div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>

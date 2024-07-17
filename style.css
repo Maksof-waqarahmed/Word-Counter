@@ -1,0 +1,181 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.main_container {
+    width: 100%;
+    height: 100vh;
+    background-color: #d9edf7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-content-container {
+    width: 90%;
+    max-width: 800px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.heading-div {
+    width: 100%;
+    background-color: #d9edf7;
+    color: #424d61;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.options-div {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.options_inner_div {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #dddddd;
+    padding: 10px;
+    border-radius: 10px;
+    flex-wrap: wrap; /* Ensures options wrap to the next line if needed */
+}
+
+.writing-style-div {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    color: #424d61;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    margin: 5px; /* Adds space between options */
+}
+
+.writing-style-div:hover {
+    background-color: #d9edf7;
+    color: #2a3f54;
+    transform: scale(1.1);
+}
+
+.increase-font h3 {
+    font-size: 25px;
+}
+
+.decrease-font h3 {
+    font-size: 20px;
+}
+
+.bold-text h3 {
+    font-weight: 900;
+    font-size: 25px;
+}
+
+.underline-text h3 {
+    text-decoration: underline;
+    font-size: 25px;
+}
+
+.italic-text h3 {
+    font-style: italic;
+    font-size: 25px;
+}
+
+.clear-text h3 {
+    font-size: 25px;
+}
+
+.text-area-div {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#textArea {
+    width: 100%;
+    height: 280px;
+    padding: 10px;
+    border: 2px solid #dddddd;
+    outline: none;
+    font-size: 18px;
+    border-radius: 10px;
+}
+
+.word-count-div {
+    width: 100%;
+    background-color: #dddddd;
+    border-radius: 10px;
+    color: #424d61;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    font-size: 1.5rem;
+}
+
+/* Responsive Design */
+@media (max-width: 670px) {
+    .main-content-container {
+        padding: 10px;
+    }
+
+    .heading-div {
+        font-size: 1.5rem;
+        padding: 5px;
+    }
+
+    .options_inner_div {
+        padding: 5px;
+    }
+
+    .writing-style-div {
+        width: 40px;
+        height: 40px;
+    }
+
+    .writing-style-div h3 {
+        font-size: 20px;
+    }
+
+    #textArea {
+        height: 200px;
+    }
+
+    .word-count-div {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 486px) {
+   
+
+    .heading-div {
+        font-size: 1.5rem;
+        padding: 5px;
+        text-align: center;
+    }
+
+    .word-count-div {
+        font-size: 1.2rem;
+        text-align: center;
+
+    }
+}
+
+
